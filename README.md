@@ -52,7 +52,7 @@ We test both algorithms on **30 different graphs** across 4 size categories and 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/bexiiiii/Assignment3DAA.git
 cd assignment3
 
 # Build with Maven

@@ -19,19 +19,7 @@
 
 ---
 
-##  Table of Contents
 
-- [About](#-about)
-- [Features](#-features)
-- [Quick Start](#-quick-start)
-- [Performance Results](#-performance-results)
-- [Project Structure](#-project-structure)
-- [Usage Examples](#-usage-examples)
-- [Testing](#-testing)
-- [Analysis & Visualization](#-analysis--visualization)
-- [Algorithm Comparison](#-algorithm-comparison)
-- [Documentation](#-documentation)
-- [Requirements](#-requirements)
 
 ---
 

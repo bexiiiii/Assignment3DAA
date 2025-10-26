@@ -103,16 +103,16 @@ python3 scripts/analyze_results.py
 
 </div>
 
-### 📈 Performance by Graph Size
+###  Performance by Graph Size
 
 | Category | Graphs | Vertices | Edges | Prim Time | Kruskal Time | **Winner** |
 |----------|--------|----------|-------|-----------|--------------|------------|
-| Small  | 5 | 8-24 | 16-48 | 0.97 ms | 0.14 ms | **Kruskal 7x** ⚡ |
-| Medium  | 10 | 50-275 | 150-1120 | 1.96 ms | 0.66 ms | **Kruskal 3x** ⚡ |
-| Large  | 10 | 100-910 | 400-3640 | 13.55 ms | 1.10 ms | **Kruskal 12x** ⚡ |
-| Extra  | 5 | 500-2500 | 2500-12500 | 95.17 ms | 3.45 ms | **Kruskal 28x** 🚀 |
+| Small  | 5 | 8-24 | 16-48 | 0.97 ms | 0.14 ms | **Kruskal 7x**  |
+| Medium  | 10 | 50-275 | 150-1120 | 1.96 ms | 0.66 ms | **Kruskal 3x**  |
+| Large  | 10 | 100-910 | 400-3640 | 13.55 ms | 1.10 ms | **Kruskal 12x**  |
+| Extra  | 5 | 500-2500 | 2500-12500 | 95.17 ms | 3.45 ms | **Kruskal 28x**  |
 
-### 📊 Visual Results
+###  Visual Results
 
 #### Performance Analysis
 ![Performance Analysis](results/performance_analysis.png)

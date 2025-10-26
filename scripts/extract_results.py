@@ -56,4 +56,4 @@ with open('results/results.csv', 'w', newline='', encoding='utf-8') as f:
             speedup
         ])
 
-print("✅ results/results.csv created successfully!")
+print(" results/results.csv created successfully!")

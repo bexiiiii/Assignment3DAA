@@ -1,11 +1,11 @@
-# 🌲 MST Algorithms: Prim vs Kruskal
+#  MST Algorithms: Prim vs Kruskal
 
 <div align="center">
 
 [![Java](https://img.shields.io/badge/Java-11+-orange.svg)](https://www.oracle.com/java/)
 [![Maven](https://img.shields.io/badge/Maven-3.6+-blue.svg)](https://maven.apache.org/)
 [![Tests](https://img.shields.io/badge/Tests-6%2F6%20Passing-brightgreen.svg)](https://junit.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 
 **Complete implementation and performance comparison of Prim's and Kruskal's algorithms for finding Minimum Spanning Trees**
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [About](#-about)
 - [Features](#-features)
@@ -35,32 +35,32 @@
 
 ---
 
-## 🎯 About
+##  About
 
 This project implements and compares two classic algorithms for finding **Minimum Spanning Trees (MST)**:
 
-- **🔵 Prim's Algorithm** - Grows MST from a single vertex using a priority queue
-- **🟢 Kruskal's Algorithm** - Sorts all edges and builds MST using Union-Find
+- ** Prim's Algorithm** - Grows MST from a single vertex using a priority queue
+- ** Kruskal's Algorithm** - Sorts all edges and builds MST using Union-Find
 
 We test both algorithms on **30 different graphs** across 4 size categories and measure their performance in terms of execution time and operation count.
 
 ---
 
-## ✨ Features
+##  Features
 
-- ✅ **Complete Implementation** - Both Prim's and Kruskal's algorithms fully implemented
-- 📊 **Performance Metrics** - Operation counting and precise time measurement
-- 🧪 **Comprehensive Testing** - 6 unit tests + 30 integration tests
-- 📈 **Visual Analysis** - Automatic chart generation with performance comparisons
-- 📝 **JSON I/O** - Standard JSON format for input graphs and output results
-- 🔄 **Reproducible** - Fixed random seed ensures consistent results
-- 📚 **Well Documented** - Clear code comments and detailed analysis
+-  **Complete Implementation** - Both Prim's and Kruskal's algorithms fully implemented
+-  **Performance Metrics** - Operation counting and precise time measurement
+-  **Comprehensive Testing** - 6 unit tests + 30 integration tests
+-  **Visual Analysis** - Automatic chart generation with performance comparisons
+-  **JSON I/O** - Standard JSON format for input graphs and output results
+-  **Reproducible** - Fixed random seed ensures consistent results
+-  **Well Documented** - Clear code comments and detailed analysis
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
-### 1️⃣ Build the Project
+### 1️ Build the Project
 
 ```bash
 # Clone the repository
@@ -71,18 +71,18 @@ cd assignment3
 mvn clean package
 ```
 
-**Expected output:** `BUILD SUCCESS` ✅
+**Expected output:** `BUILD SUCCESS` 
 
-### 2️⃣ Run Analysis
+### 2️ Run Analysis
 
 ```bash
 # Process all 30 graphs from input.json
 java -jar target/mst-algorithms-1.0-SNAPSHOT.jar input.json output.json
 ```
 
-**Expected output:** `Processing completed successfully!` ✅
+**Expected output:** `Processing completed successfully!` 
 
-### 3️⃣ View Results
+### 3️ View Results
 
 ```bash
 # Generate CSV summary
@@ -93,25 +93,25 @@ python3 scripts/analyze_results.py
 ```
 
 **Generated files:**
-- 📄 `results/results.csv` - Summary table
-- 📊 `results/performance_analysis.png` - Performance charts
-- 📈 `results/detailed_time_analysis.png` - Detailed analysis
+-  `results/results.csv` - Summary table
+-  `results/performance_analysis.png` - Performance charts
+-  `results/detailed_time_analysis.png` - Detailed analysis
 
 ---
 
-## 📊 Performance Results
+##  Performance Results
 
-### 🏆 Winner: Kruskal's Algorithm
+###  Winner: Kruskal's Algorithm
 
 <div align="center">
 
 | Metric | Value |
 |--------|-------|
 | **Total Graphs Tested** | 30 |
-| **Kruskal Wins** | 29 (96.7%) 🥇 |
+| **Kruskal Wins** | 29 (96.7%)  |
 | **Prim Wins** | 1 (3.3%) |
 | **Average Speedup** | **12.4x faster** ⚡ |
-| **Maximum Speedup** | **37x faster** 🚀 |
+| **Maximum Speedup** | **37x faster**  |
 
 </div>
 
@@ -119,10 +119,10 @@ python3 scripts/analyze_results.py
 
 | Category | Graphs | Vertices | Edges | Prim Time | Kruskal Time | **Winner** |
 |----------|--------|----------|-------|-----------|--------------|------------|
-| Small 🟢 | 5 | 8-24 | 16-48 | 0.97 ms | 0.14 ms | **Kruskal 7x** ⚡ |
-| Medium 🔵 | 10 | 50-275 | 150-1120 | 1.96 ms | 0.66 ms | **Kruskal 3x** ⚡ |
-| Large 🟠 | 10 | 100-910 | 400-3640 | 13.55 ms | 1.10 ms | **Kruskal 12x** ⚡ |
-| Extra 🔴 | 5 | 500-2500 | 2500-12500 | 95.17 ms | 3.45 ms | **Kruskal 28x** 🚀 |
+| Small  | 5 | 8-24 | 16-48 | 0.97 ms | 0.14 ms | **Kruskal 7x** ⚡ |
+| Medium  | 10 | 50-275 | 150-1120 | 1.96 ms | 0.66 ms | **Kruskal 3x** ⚡ |
+| Large  | 10 | 100-910 | 400-3640 | 13.55 ms | 1.10 ms | **Kruskal 12x** ⚡ |
+| Extra  | 5 | 500-2500 | 2500-12500 | 95.17 ms | 3.45 ms | **Kruskal 28x** 🚀 |
 
 ### 📊 Visual Results
 
@@ -143,38 +143,38 @@ python3 scripts/analyze_results.py
 ```
 assignment3/
 │
-├── 📂 src/
-│   ├── 📂 main/java/
-│   │   ├── 🔵 PrimAlgorithm.java           # Prim's algorithm implementation
-│   │   ├── 🟢 KruskalAlgorithm.java        # Kruskal's algorithm implementation
-│   │   ├── 📊 MSTProcessor.java            # Main processor (entry point)
-│   │   ├── 🎲 InputGenerator.java          # Generates 30 test graphs
-│   │   ├── 📈 Graph.java                   # Graph data structure
-│   │   ├── 🔗 Edge.java                    # Edge representation
-│   │   ├── 📦 MSTResult.java               # Result container
-│   │   ├── 📄 GraphData.java               # JSON data structure
-│   │   ├── 📥 InputData.java               # Input wrapper
-│   │   ├── 🌲 GraphGenerator.java          # Graph generation utilities
-│   │   └── 🔧 UnionFind.java               # Union-Find data structure
+├──  src/
+│   ├──  main/java/
+│   │   ├──  PrimAlgorithm.java           # Prim's algorithm implementation
+│   │   ├──  KruskalAlgorithm.java        # Kruskal's algorithm implementation
+│   │   ├──  MSTProcessor.java            # Main processor (entry point)
+│   │   ├──  InputGenerator.java          # Generates 30 test graphs
+│   │   ├──  Graph.java                   # Graph data structure
+│   │   ├──  Edge.java                    # Edge representation
+│   │   ├──  MSTResult.java               # Result container
+│   │   ├──  GraphData.java               # JSON data structure
+│   │   ├──  InputData.java               # Input wrapper
+│   │   ├──  GraphGenerator.java          # Graph generation utilities
+│   │   └──  UnionFind.java               # Union-Find data structure
 │   │
-│   └── 📂 test/java/
-│       └── ✅ MSTAlgorithmTest.java        # Unit tests (6 tests)
+│   └──  test/java/
+│       └──  MSTAlgorithmTest.java        # Unit tests (6 tests)
 │
-├── 📊 input.json                            # 30 test graphs (6.0 MB)
+├──  input.json                            # 30 test graphs (6.0 MB)
 │
-├── � docs/                                 # 📚 Documentation
+├──  docs/                                 #  Documentation
 │   ├── SUMMARY.md                           #   Complete analysis (8.8 KB)
 │   ├── METHODOLOGY_AND_ANALYSIS.md          #   Detailed methodology (13 KB)
 │   ├── VERIFICATION.md                      #   Requirements checklist (6.6 KB)
 │   └── PROJECT_COMPLETE.md                  #   Completion status (8.5 KB)
 │
-├── � results/                              # 📈 Results & Visualization
+├──  results/                              #  Results & Visualization
 │   ├── output.json                          #   Processing results (2.9 MB)
 │   ├── results.csv                          #   Summary table (2.1 KB)
 │   ├── performance_analysis.png             #   Performance charts (645 KB)
 │   └── detailed_time_analysis.png           #   Detailed analysis (611 KB)
 │
-├── � scripts/                              # 🐍 Python Analysis Scripts
+├──  scripts/                              #  Python Analysis Scripts
 │   ├── extract_results.py                   #   CSV extraction
 │   └── analyze_results.py                   #   Visualization generation
 │
@@ -194,7 +194,7 @@ mvn test
 
 **Output:**
 ```
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0 ✅
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0 
 ```
 
 ### Process Custom Graph
@@ -244,29 +244,29 @@ cat results.csv | awk -F',' '{print $1, $10}' | column -t
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Unit Tests Coverage
 
 | Test | Description | Status |
 |------|-------------|--------|
-| `testPrimAlgorithmGraph1` | Prim on 5-vertex graph | ✅ Pass |
-| `testKruskalAlgorithmGraph1` | Kruskal on 5-vertex graph | ✅ Pass |
-| `testPrimAlgorithmGraph2` | Prim on 4-vertex graph | ✅ Pass |
-| `testKruskalAlgorithmGraph2` | Kruskal on 4-vertex graph | ✅ Pass |
-| `testBothAlgorithmsProduceSameCost` | Cost comparison | ✅ Pass |
-| `testSimpleTriangle` | Triangle graph | ✅ Pass |
+| `testPrimAlgorithmGraph1` | Prim on 5-vertex graph |  Pass |
+| `testKruskalAlgorithmGraph1` | Kruskal on 5-vertex graph |  Pass |
+| `testPrimAlgorithmGraph2` | Prim on 4-vertex graph |  Pass |
+| `testKruskalAlgorithmGraph2` | Kruskal on 4-vertex graph |  Pass |
+| `testBothAlgorithmsProduceSameCost` | Cost comparison |  Pass |
+| `testSimpleTriangle` | Triangle graph |  Pass |
 
 ### Correctness Verification
 
-✅ **MST Cost** - Both algorithms always find the same total cost  
-✅ **Edge Count** - All MSTs have exactly V-1 edges  
-✅ **Connectivity** - All test graphs are connected  
-✅ **Reproducibility** - Fixed seed (42) ensures same results
+ **MST Cost** - Both algorithms always find the same total cost  
+ **Edge Count** - All MSTs have exactly V-1 edges  
+ **Connectivity** - All test graphs are connected  
+ **Reproducibility** - Fixed seed (42) ensures same results
 
 ---
 
-## 📊 Analysis & Visualization
+##  Analysis & Visualization
 
 ### Generate Performance Charts
 
@@ -281,78 +281,74 @@ python3 analyze_results.py
 ### Charts Generated
 
 **1. Performance Analysis (6 charts in one)**
-- ⏱️ Execution time vs vertices
-- 🔢 Operations count comparison
-- 🚀 Speedup by category
-- 🏆 Win distribution
-- 📊 Time vs edges
-- 📈 Operations for all 30 graphs
+- ⏱ Execution time vs vertices
+-  Operations count comparison
+-  Speedup by category
+-  Win distribution
+-  Time vs edges
+-  Operations for all 30 graphs
 
 **2. Detailed Time Analysis**
-- 🟢 Small graphs (5 graphs)
-- 🔵 Medium graphs (10 graphs)
-- 🟠 Large graphs (10 graphs)
-- 🔴 Extra large graphs (5 graphs)
+-  Small graphs (5 graphs)
+-  Medium graphs (10 graphs)
+-  Large graphs (10 graphs)
+-  Extra large graphs (5 graphs)
 
 ---
 
-## 🔬 Algorithm Comparison
+##  Algorithm Comparison
 
 ### Theoretical Complexity
 
 | Algorithm | Time Complexity | Space Complexity |
 |-----------|----------------|------------------|
-| **Prim** 🔵 | O(E log V) | O(V + E) |
-| **Kruskal** 🟢 | O(E log E) | O(V + E) |
+| **Prim**  | O(E log V) | O(V + E) |
+| **Kruskal**  | O(E log E) | O(V + E) |
 
 ### Practical Performance (Our Results)
 
-| Aspect | Prim 🔵 | Kruskal 🟢 | Winner |
+| Aspect | Prim  | Kruskal  | Winner |
 |--------|---------|------------|--------|
-| **Small graphs** | 0.97 ms | 0.14 ms | 🟢 **Kruskal 7x** |
-| **Large graphs** | 95.17 ms | 3.45 ms | 🟢 **Kruskal 28x** |
-| **Operations** | Fewer | More | 🔵 Prim |
-| **Actual speed** | Slower | Faster | 🟢 **Kruskal** |
-| **Memory** | O(V+E) | O(V+E) | 🤝 Tie |
+| **Small graphs** | 0.97 ms | 0.14 ms |  **Kruskal 7x** |
+| **Large graphs** | 95.17 ms | 3.45 ms |  **Kruskal 28x** |
+| **Operations** | Fewer | More |  Prim |
+| **Actual speed** | Slower | Faster |  **Kruskal** |
+| **Memory** | O(V+E) | O(V+E) |  Tie |
 
 ### When to Use Each Algorithm
 
-#### Use Prim 🔵 When:
-- ✅ Graph has very few edges (sparse)
-- ✅ You need to start from specific vertex
-- ✅ Building MST incrementally
+#### Use Prim  When:
+-  Graph has very few edges (sparse)
+-  You need to start from specific vertex
+-  Building MST incrementally
 
-#### Use Kruskal 🟢 When:
-- ✅ You want the fastest solution
-- ✅ Graph is large (V > 100)
-- ✅ Graph has many edges (dense)
-- ✅ Performance is critical
+#### Use Kruskal  When:
+-  You want the fastest solution
+-  Graph is large (V > 100)
+-  Graph has many edges (dense)
+-  Performance is critical
 
 **💡 Simple Rule:** Use Kruskal for most real-world projects!
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 | Document | Description | Size |
 |----------|-------------|------|
-| 📘 [README.md](README.md) | Quick start guide (this file) | 2.7 KB |
-| 📗 [SUMMARY.md](docs/SUMMARY.md) | Complete analysis with all results | 8.8 KB |
-| 📙 [METHODOLOGY_AND_ANALYSIS.md](docs/METHODOLOGY_AND_ANALYSIS.md) | Detailed methodology and analysis | 13 KB |
-| 📕 [VERIFICATION.md](docs/VERIFICATION.md) | Test verification checklist | 6.6 KB |
-| 📔 [PROJECT_COMPLETE.md](docs/PROJECT_COMPLETE.md) | Completion status | 8.5 KB |
+|  [README.md](README.md) | Quick start guide (this file) | 2.7 KB |
 
 ---
 
-## 🛠️ Requirements
+##  Requirements
 
 ### Software Requirements
 
 | Tool | Version | Purpose |
 |------|---------|---------|
-| ☕ **Java** | 11+ | Core implementation |
-| 📦 **Maven** | 3.6+ | Build and dependency management |
-| 🐍 **Python** | 3.x | Analysis and visualization |
+|  **Java** | 11+ | Core implementation |
+|  **Maven** | 3.6+ | Build and dependency management |
+|  **Python** | 3.x | Analysis and visualization |
 
 ### Python Packages (for visualization)
 
@@ -370,25 +366,25 @@ pip install pandas matplotlib numpy
 
 ---
 
-## 🎯 Key Findings
+##  Key Findings
 
-### 💡 Main Insights
+###  Main Insights
 
 1. **Kruskal dominates in practice** - 96.7% win rate across all test cases
 2. **Theory vs Practice** - Despite similar O(E log V) complexity, Kruskal is 12.4x faster on average
 3. **Scalability** - Performance gap increases with graph size (up to 37x on largest graphs)
 4. **Correctness verified** - Both algorithms always produce identical MST costs
 
-### 🔍 Why Kruskal is Faster?
+###  Why Kruskal is Faster?
 
 - ⚡ Java's `Arrays.sort()` is highly optimized
-- 🎯 Better cache locality (processes all edges at once)
-- 🚀 Efficient Union-Find with path compression
-- 📦 Less overhead compared to PriorityQueue operations
+-  Better cache locality (processes all edges at once)
+-  Efficient Union-Find with path compression
+-  Less overhead compared to PriorityQueue operations
 
 ---
 
-## 🚦 Quick Commands Reference
+##  Quick Commands Reference
 
 ```bash
 # Build project
@@ -411,7 +407,7 @@ cat results/output.json | jq '.results[0]'      # Detailed view of graph 1
 
 ---
 
-## 📈 Sample Output
+##  Sample Output
 
 ### Console Output
 
@@ -428,7 +424,7 @@ Processing graph 2/30: graph_2 (12 vertices, 24 edges)
 
 ...
 
-✅ Processing completed successfully!
+ Processing completed successfully!
    Total graphs: 30
    Kruskal wins: 29 (96.7%)
    Average speedup: 12.4x
@@ -445,38 +441,13 @@ graph_30,extra,2500,12500,15598945,87909,167.61,108046,4.53,Kruskal,37.00x
 
 ---
 
-## 🤝 Contributing
-
-Feel free to fork this project and submit pull requests. For major changes, please open an issue first.
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-Created for Data Structures Course - Assignment 3  
-📅 October 2025
-
----
-
-## 🌟 Acknowledgments
-
-- Thanks to Prim and Kruskal for their elegant algorithms
-- JUnit for testing framework
-- Gson for JSON processing
-- Matplotlib for beautiful visualizations
-
----
 
 <div align="center">
 
-### ⭐ Star this repo if you find it helpful!
 
-**Made with ❤️ and ☕**
 
 </div>

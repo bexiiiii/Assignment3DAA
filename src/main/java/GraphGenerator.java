@@ -90,7 +90,7 @@ public class GraphGenerator {
      * - small: 10 graphs with < 30 vertices
      * - medium: 10 graphs with < 300 vertices  
      * - large: 10 graphs with < 1000 vertices
-     * - extra: 5 graphs with < 300 vertices
+     * - extra: 5 graphs with < 3000 vertices
      */
     public static List<TestGraphSpec> generateTestSpecification() {
         List<TestGraphSpec> specs = new ArrayList<>();
@@ -116,11 +116,11 @@ public class GraphGenerator {
             specs.add(new TestGraphSpec("large_" + (i + 1), vertices, edges, 10000));
         }
         
-        // Extra large graphs (5 graphs, < 300 vertices)
+        // Extra large graphs (5 graphs, < 3000 vertices)
         for (int i = 0; i < 5; i++) {
-            int vertices = 100 + i * 40; // 100, 140, 180, 220, 260
-            int edges = Math.min(vertices * 4, vertices * (vertices - 1) / 2);
-            specs.add(new TestGraphSpec("extra_" + (i + 1), vertices, edges, 1000));
+            int vertices = 500 + i * 500; // 500, 1000, 1500, 2000, 2500
+            int edges = Math.min(vertices * 5, vertices * (vertices - 1) / 2);
+            specs.add(new TestGraphSpec("extra_" + (i + 1), vertices, edges, 50000));
         }
         
         return specs;

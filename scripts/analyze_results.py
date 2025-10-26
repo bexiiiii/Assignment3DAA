@@ -216,7 +216,7 @@ plt.suptitle('MST Algorithms: Comprehensive Performance Analysis',
              fontsize=16, fontweight='bold', y=0.995)
 
 plt.savefig('results/performance_analysis.png', dpi=300, bbox_inches='tight')
-print("✅ Saved: results/performance_analysis.png")
+print(" Saved: results/performance_analysis.png")
 
 # Additional graph: detailed time comparison
 fig2, axes = plt.subplots(2, 2, figsize=(16, 12))
@@ -255,10 +255,10 @@ for idx, cat_name in enumerate(['small', 'medium', 'large', 'extra']):
 
 plt.tight_layout()
 plt.savefig('results/detailed_time_analysis.png', dpi=300, bbox_inches='tight')
-print("✅ Saved: results/detailed_time_analysis.png")
+print(" Saved: results/detailed_time_analysis.png")
 
 print("\n" + "=" * 80)
-print("✅ Analysis completed!")
+print(" Analysis completed!")
 print("=" * 80)
 print("\nGenerated files:")
 print("  • performance_analysis.png - comprehensive analysis")
